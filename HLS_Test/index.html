@@ -9,9 +9,9 @@
 			& 'C:\Program Files\FFmpeg\bin\ffmpeg.exe' -ss 00:09:48 -threads 1 -i 'tears_of_steel_1080p.webm' -flags '+cgop' -sc_threshold 0 -map 0:v:0 -codec:v:0 'h264_nvenc' -filter:v:0 'crop=x=249:w=1422:exact=1,scale=w=-2:h=720,setsar=1:1' -b:v:0 3072k -preset:v:0 slow -profile:v:0 high -level:v:0 3.2 -cq:v:0 22 -rc:v:0 vbr_hq -maxrate:v:0 1.1*3072k -bufsize:v:0 2*3072k -bf:v:0 2 -strict_gop:v:0 1 -g:v:0 360 -keyint_min:v:0 360 -map 0:a:0 -codec:a:0 "aac" -b:a:0 128k -ac:a:0 2 -hls_time 6 -hls_playlist_type event -hls_list_size 0 -hls_fmp4_init_filename '%v/init.mp4' -strftime_mkdir 1 -hls_segment_filename '%v/%04d.m4s' -hls_segment_type fmp4 -hls_flags independent_segments+program_date_time -master_pl_name 'master.m3u8' -var_stream_map 'v:0,name:video_high,agroup:stereo a:0,name:stereo,agroup:stereo' 'C:\...\HLS_Test\video\%v.m3u8'
 		</blockquote>
 		<ul>
-			<li><a href="video_v7-8-4.html">Video.js v7.8.4 player page</a> (<a href="video_v7-8-4_enableLowInitialPlaylist.html">enableLowInitialPlaylist)</a></li>
+			<li><a href="video_v7-8-4.html">Video.js v7.8.4 player page</a> (<a href="video_v7-8-4_enableLowInitialPlaylist.html">enableLowInitialPlaylist</a>)</li>
 			<li><a href="video_v7-10-2.html">Video.js v7.10.2 player page</a> (<a href="video_v7-10-2_enableLowInitialPlaylist.html">enableLowInitialPlaylist</a>)</li>
-			<li><a href="video_v7-11-0.html">Video.js v7.11.0 player page</a> (<a href="video_v7-11-0_enableLowInitialPlaylist.html">enableLowInitialPlaylist</a></li>
+			<li><a href="video_v7-11-0.html">Video.js v7.11.0 player page</a> (<a href="video_v7-11-0_enableLowInitialPlaylist.html">enableLowInitialPlaylist</a>)</li>
 		</ul>
 		<p>From <a href="https://github.com/LanceUMatthews/lanceumatthews.github.io/tree/main/HLS_Test" style="font-family: monospace;">https://github.com/LanceUMatthews/lanceumatthews.github.io/tree/main/HLS_Test</a></p>
 	</body>
